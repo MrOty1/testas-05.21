@@ -1,0 +1,177 @@
+body{
+    background-image: url(images/background.png);
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: Verdana;
+    overflow-x: hidden;
+    text-align: center;
+    color: black;
+    font-size: 2vh;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    display: contents;
+    color: black;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+h1{
+    font-weight: bold;
+    color: white;
+    font-size: 2vw;
+}
+
+.troll{
+    background: white;
+    color: gray;
+}
+
+/* NEWS SCROLL */
+
+.news{
+    margin: auto;
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 5vh rgba(0, 0, 0, 0.5);
+    width: 100vw;
+    height: 60vh;
+}
+
+.scroll{
+    grid-template-columns: repeat(15, 45vh);
+    animation: scrollimg 30s infinite 0s ease-in, scrollimg 30s infinite 30s linear;
+    position: relative;
+    display: grid;
+    width: 100%;
+    height: 45vh;
+}
+
+.scroll .newsthing{
+    border: 0.5vh solid rgba(0, 0, 0, 0.1);
+    transition: padding 0.5s;
+    background: white;
+    display: block;
+    margin: auto;
+    border-radius: 1vw;
+    height: 40vh;
+    width: 20vw;
+}
+
+.scroll .newsimg{
+    background-size: cover;
+    height: 20vh;
+    width: 16vw;
+    margin: 1vw;
+
+}
+
+.scroll .newsthing:hover{
+    padding: 1.5vh;
+}
+
+/* NEWS TAB */
+
+.mainnews{
+    border-top: 0.5vh solid black;
+    border-bottom: 0.5vh solid black;
+    padding-top: 5vh;
+    background: white;
+    grid-template-columns: repeat(2, 30vw);
+    justify-content: center;
+    display: grid;
+    column-gap: 2vh;
+    margin-top: 5vh;
+    width: 100vw;
+    animation: newsintro 1s;
+}
+
+.mainnews .newsthing{
+    border: 0.5vh solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 5vh rgba(0, 0, 0, 1);
+    background: white;
+    margin-bottom: 1vw;
+    border-radius: 1vh;
+}
+
+.mainnews .newsimg{
+    width: 28vw;
+    height: 40vh;
+}
+
+.newsthing:hover{
+    animation: newshover 0.5s;
+    border: 0.5vh solid rgba(0, 0, 0, 0.8);
+}
+
+/* WEB DESIGN */
+
+.line{
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90vw;
+    height: 0.3vh;
+    background: black;
+}
+
+.social{
+    color: rgb(70, 185, 185)
+}
+
+footer{
+    border-top: 0.5vh black solid;
+    background: white;
+    margin-top: 5vh;
+    width: 100vw;
+}
+
+footer a{
+    display: contents;
+    color: rgb(0, 115, 200);
+    font-weight: bold;
+}
+
+/* ANIMATIONS */
+
+@keyframes newshover{
+    0%{
+        border: 0.5vh solid rgba(0, 0, 0, 0.1);   
+    }
+    100%{
+        border: 0.5vh solid rgba(0, 0, 0, 0.8);
+    }
+}
+
+@keyframes scrollimg{
+    0%{
+        right: 0vw;
+    }
+    100%{
+        right: 230.80vw;
+    }
+}
+
+@keyframes hover{
+    0%{
+        padding: 0;
+    }
+    100%{
+        padding: 2vh;
+    }
+}
+
+@keyframes newsintro{
+    0%{
+        opacity: 0%;
+        column-gap: 5vh;
+    }
+    100%{
+        opacity: 100%;
+        column-gap: 2vh;
+        }
+}

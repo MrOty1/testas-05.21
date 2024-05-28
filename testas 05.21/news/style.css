@@ -1,0 +1,211 @@
+body{
+    background-image: url(../images/background.png);
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: helvetica;
+    overflow-x: hidden;
+    text-align: center;
+    color: black;
+    font-size: 2vh;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    display: contents;
+    color: rgb(0, 115, 200);
+    font-weight: bold;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+b{
+    font-size: 5vw;
+}
+
+h1{
+    font-weight: bold;
+    color: black;
+    font-size: 2vw;
+}
+
+.troll{
+    background: white;
+    color: darkgray;
+}
+
+.backbutton{
+    white-space: nowrap;
+	overflow: hidden;
+    margin: 1vh;
+    position: fixed;
+    background: rgba(0, 225, 255, 0.9);
+    border: 0.3vh solid white;
+    width: 2vw;
+    height: 4.2vh;
+    color: white;
+    font-size: 3vh;
+    font-weight: bolder;
+    transition: width 0.2s;
+    border-radius: 1vh;
+    text-align: center;
+    box-shadow: 0 0 1vw white;
+    animation: popup 0.5s, colorchanging 1s infinite;
+}
+
+.backbutton:hover{
+    width: 11vw;
+}
+
+/* NEWS TEXT */
+
+.maintext{
+    margin-top: 5vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20vh;
+    width: 90vw;
+    background: rgba(255, 255, 255, 0.95);
+    text-align: left;
+    padding: 1vw;
+    box-shadow: 0 0 1vw white;
+    border: 0.5vh solid black;
+    border-radius: 3vh;
+    animation: intro 0.5s;
+}
+
+.mainimg{
+    box-shadow: inset 0px 200px 300px -170px rgba(0,204,255,1);
+    background-attachment: fixed;
+    background-position-y: center;
+    text-align: center;
+    margin-bottom: 5vw;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    font-weight: bold;
+    background-size: cover;
+    width: 80%;
+    height: 42vh;
+    font-size: 5vh;
+}
+
+/* NEWS PAGE BACKGROUND */
+
+.news1 .mainimg{
+    background-image: url(../images/news/1.jpg);
+}
+
+.news2 .mainimg{
+    background-image: url(../images/news/2.jpg);
+}
+
+.news3 .mainimg{
+    background-image: url(../images/news/3.jpg);
+}
+
+.news4 .mainimg{
+    background-image: url(../images/news/4.jpg);
+}
+
+.news5 .mainimg{
+    background-image: url(../images/news/5.jpg);
+    background-position-y: top;
+}
+
+.news6 .mainimg{
+    background-image: url(../images/news/6.jpg);
+    background-position-y: bottom;
+}
+
+.news7 .mainimg{
+    background-image: url(../images/news/7.jpg);
+}
+
+.news8 .mainimg{
+    background-image: url(../images/news/8.jpg);
+    background-position-y: bottom;
+}
+
+.news9 .mainimg{
+    background-image: url(../images/news/9.jpg);
+}
+
+.news10 .mainimg{
+    background-image: url(../images/news/10.jpg);
+}
+
+/* WEB DESIGN */
+
+footer{
+    border-top: 0.5vh black solid;
+    background: white;
+    margin-top: 5vh;
+    width: 100vw;
+    position: fixed;
+    bottom: 0;
+    height: 3vh;
+    transition: height 1s;
+}
+
+footer:hover{
+    height: 15vh;
+}
+
+.line{
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90vw;
+    height: 0.3vh;
+    background: black;
+}
+
+.social{
+    color: rgb(70, 185, 185)
+}
+
+@keyframes buttonhover{
+    0%{
+        border: 0.5vh solid rgba(0, 0, 0, 0.3);   
+    }
+    100%{
+        border: 0.5vh solid rgba(0, 0, 0, 0.8);
+    }
+}
+
+@keyframes popup{
+    0%{
+        width: 0vw;
+    }
+    100%{
+        width: 2vw; 
+    }
+}
+
+@keyframes colorchanging{
+    0%{
+        box-shadow: 0 0 1vw white;
+        border: 0.3vh solid white;
+    }
+    50%{
+        box-shadow: 0 0 1vw blue;
+        border: 0.3vh solid blue;
+    }
+    100%{
+        box-shadow: 0 0 1vw white;
+        border: 0.3vh solid white;
+    }
+}
+
+@keyframes intro{
+    0%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+        }
+}
